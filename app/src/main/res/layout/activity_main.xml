@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,61 +7,10 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_weight="1"
-        android:background="@color/bgGray"
-        android:gravity="right|center"
-        android:textSize="40pt"
-        android:inputType="number"
-        android:text="0"/>
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:id="@+id/btnAC"
-                android:text="AC"
-                android:layout_weight="1"
-                android:layout_width="30pt"
-                android:layout_height="30pt"
-                android:layout_marginRight="1pt"
-                android:background="@color/btn_bg"
-                />
-            <Button
-                android:id="@+id/btnMinus"
-                android:text="AC"
-                android:layout_weight="1"
-                android:layout_width="30pt"
-                android:layout_height="30pt"
-                android:layout_marginRight="1pt"
-                android:background="@color/btn_bg"
-                />
-            <Button
-                android:id="@+id/btnPlus"
-                android:text="AC"
-                android:layout_weight="1"
-                android:layout_width="30pt"
-                android:layout_height="30pt"
-                android:layout_marginRight="1pt"
-                android:background="@color/btn_bg"
-                />
-            <Button
-                android:id="@+id/btnEqual"
-                android:text="AC"
-                android:layout_weight="1"
-                android:layout_width="30pt"
-                android:layout_height="30pt"
-                android:layout_marginRight="1pt"
-                android:background="@color/btn_bg"
-                />
-        </TableRow>
-    </TableLayout>
-</LinearLayout>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="salom dunyo"
+       android:layout_centerVertical="true"
+       android:layout_alignParentLeft="true"/>
+</RelativeLayout>
