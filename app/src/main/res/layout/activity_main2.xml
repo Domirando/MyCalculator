@@ -9,6 +9,7 @@
 
     <EditText
         android:id="@+id/editText"
+        android:layout_marginBottom="1pt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -24,10 +25,12 @@
         android:layout_height="wrap_content">
 
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/btnAC"
+                android:onClick="acEvent"
                 android:text="AC"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -37,6 +40,7 @@
                 />
             <Button
                 android:id="@+id/btnPlusMinus"
+                android:onClick="numberEvent"
                 android:text="+/-"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -46,6 +50,7 @@
                 />
             <Button
                 android:id="@+id/btnDivide"
+                android:onClick="operationEvent"
                 android:text="/"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -55,6 +60,7 @@
                 />
             <Button
                 android:id="@+id/btnMultiply"
+                android:onClick="operationEvent"
                 android:text="*"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -64,12 +70,14 @@
                 />
         </TableRow>
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/btn9"
                 android:text="9"
                 android:layout_weight="1"
+                android:onClick="numberEvent"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
                 android:layout_marginRight="1pt"
@@ -77,6 +85,7 @@
                 />
             <Button
                 android:id="@+id/btn8"
+                android:onClick="numberEvent"
                 android:text="8"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -86,6 +95,7 @@
                 />
             <Button
                 android:id="@+id/btn7"
+                android:onClick="numberEvent"
                 android:text="7"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -95,6 +105,7 @@
                 />
             <Button
                 android:id="@+id/btnPercent"
+                android:onClick="percentEvent"
                 android:text="%"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -104,10 +115,12 @@
                 />
         </TableRow>
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/btn6"
+                android:onClick="numberEvent"
                 android:text="6"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -117,6 +130,7 @@
                 />
             <Button
                 android:id="@+id/btn5"
+                android:onClick="numberEvent"
                 android:text="5"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -126,6 +140,7 @@
                 />
             <Button
                 android:id="@+id/btn4"
+                android:onClick="numberEvent"
                 android:text="4"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -135,6 +150,7 @@
                 />
             <Button
                 android:id="@+id/btnPlus"
+                android:onClick="operationEvent"
                 android:text="+"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -145,10 +161,12 @@
 
         </TableRow>
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/btn3"
+                android:onClick="numberEvent"
                 android:text="3"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -158,6 +176,7 @@
                 />
             <Button
                 android:id="@+id/btn2"
+                android:onClick="numberEvent"
                 android:text="2"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -167,6 +186,7 @@
                 />
             <Button
                 android:id="@+id/btn1"
+                android:onClick="numberEvent"
                 android:text="1"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -176,6 +196,7 @@
                 />
             <Button
                 android:id="@+id/btnMinus"
+                android:onClick="operationEvent"
                 android:text="-"
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -187,13 +208,15 @@
     </TableLayout>
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent">
-        <TableLayout
+        <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/btn0"
+                android:onClick="numberEvent"
                 android:text="0"
                 android:layout_weight="2"
                 android:layout_width="46pt"
@@ -203,6 +226,7 @@
                 />
             <Button
                 android:id="@+id/btnDot"
+                android:onClick="numberEvent"
                 android:text="."
                 android:layout_weight="1"
                 android:layout_width="46pt"
@@ -212,6 +236,7 @@
                 />
             <Button
                 android:id="@+id/btnEqual"
+                android:onClick="equalEvent"
                 android:text="="
                 android:layout_weight="1"
                 android:layout_width="30pt"
@@ -219,6 +244,6 @@
                 android:layout_marginRight="1pt"
                 android:background="@color/btn_bg"
                 />
-        </TableLayout>
+        </TableRow>
     </LinearLayout>
 </LinearLayout>
